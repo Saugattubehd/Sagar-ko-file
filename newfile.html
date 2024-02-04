@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="table">
+        <center>
+            <table border="1" width="250" height="50">
+                <caption><strong>Details</strong></caption>
+                <thead>
+                    <th>Student Name</th>
+                    <th>Roll no </th>
+                    <th colspan="2">Marks in Subject</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Saugat Neupane</td>
+                        <td>32</td>
+                        <td>100</td>
+                        <td>199</td>
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            Total Marks:
+                        </td>
+                        <td colspan="3">399</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </center>
+    </div>
+    <hr>
+    <div class="Form">
+        <form action="/sumbitform.js" method="get" target="_blank">
+            <label for="Nametext"> Name :</label>
+            <input id="Nametext" type="text" placeholder="Enter Your Name" required>
+            <br>
+            <label for="Age" min="0" max="200">Age:</label>
+            <input type="number" placeholder="Enter Your age" id="Age" required>
+            <br>
+            <label id="DOB">Date of birth:</label>
+            <input id="DOB" type="date" required>
+            <br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required />
+            <label for="female">Female</label>
+            <br>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <button type="submit">Sumbit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    <div class="Source">
+
+<audio controls>  
+    <source
+       src="https://www.w3schools.com/html/horse.mp3"
+       type="audio/mpeg"/>
+</audio>
+<video controls>
+    <source src="D:\Horizon\Goplu.mov" type="mov" />
+</video>
+    </div>
+
+</body>
+
+</html>
